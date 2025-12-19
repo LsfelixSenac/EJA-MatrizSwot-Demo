@@ -350,15 +350,15 @@ function debounce(func, wait = 100) {
 // ——— Carrega Unity WebGL ———
 function loadUnity() {
   const loaderScript = document.createElement('script');
-  loaderScript.src   = 'Build/MatrizSWOT.loader.js';
+  loaderScript.src   = 'Build/Build.loader.js';
   loaderScript.async = true;
   loaderScript.onload = () => {
     createUnityInstance(
       document.querySelector('#unityCanvas'),
       {
-        dataUrl:            'Build/MatrizSWOT.data.unityweb',
-        frameworkUrl:       'Build/MatrizSWOT.framework.js.unityweb',
-        codeUrl:            'Build/MatrizSWOT.wasm.unityweb',
+        dataUrl:            'Build/Build.data.unityweb',
+        frameworkUrl:       'Build/Build.framework.js.unityweb',
+        codeUrl:            'Build/Build.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName:        'SenacRS',
         productName:        'UnityTemplate2024',
